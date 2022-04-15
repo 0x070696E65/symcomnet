@@ -1,0 +1,252 @@
+preset: custom-network-preset.yml
+cloneFromPreset: mainnet
+domain: symcom.club
+suffix: myc
+friendlyNamePattern: $nickname-$friendlyNumber
+networkType: 104
+isNewNetwork: true
+faucetBalances:
+    - 392146430
+additionalCurrencyDistributions:
+    - []
+customNetworkPreset:
+    nemesis:
+        mosaics:
+            -
+                name: coin
+    networkDescription: SymComNet
+    nemesisGenerationHashSeed: 27D2ECCCEEC2D70EA4F6885E17B516EB41558CF4D2809834BE7741A095C3D1D6
+    epochAdjustment: 1650007749s
+    baseNamespace: symcom
+nodes:
+    -
+        number: 1
+        friendlyName: beacon-001
+        assembly: peer
+        hostname: beacon-001.symcom.club
+        customPreset:
+            privateKeySecurityMode: PROMPT_MAIN_TRANSPORT
+            nodes:
+                -
+                    friendlyName: beacon-001
+                    host: beacon-001.symcom.club
+                    voting: true
+                    harvesting: true
+                    dockerComposeDebugMode: false
+                    brokerDockerComposeDebugMode: false
+        nickName: beacon
+        nodeType: VotingPeer
+        balances:
+            - 3000000
+        addresses:
+            name: node
+            friendlyName: beacon-001
+            roles: Peer,Voting
+            main:
+                publicKey: 41D65B78352B05A0DB73CD0C4872A4BEE1A7CBD0B26067C078B715D1FF90ABFF
+                address: NBKMOKQJYA43W4N23VWPFV6PBCB2CEGEDKVY3TY
+            transport:
+                publicKey: 9D328A5C490970EBA7E38D0337DAAE86B45FC226F1F18D61DE86F31FB577E631
+                address: NDJJIGJZY54XOYTIRTKOFVCUPTVZOE7DN2ST5JA
+            remote:
+                publicKey: DDB243864B5FEADD86318DBC141F10D46B59E2D0ADF6CFC4CAFB2B0D1951DDA7
+                address: NABXJYWIEBFUKWR2OUUDNOL5S6XUOUCQ5RNSEMI
+            vrf:
+                publicKey: EB4DFCA63C119F14B3AB190FDF2412483CF05A2F72734BA88DF7C66298972AE1
+                address: NBNUQTSZHISWCSAP2D4LSNEJM5QG5CYKOLDEPCY
+            voting:
+                -
+                    publicKey: E4686421B133E8995C329E802646A5D002004101E30798544D5C70E395E4AE30
+                    startEpoch: 1
+                    endEpoch: 360
+                    filename: private_key_tree1.dat
+    -
+        number: 2
+        friendlyName: beacon-002
+        assembly: peer
+        hostname: beacon-002.symcom.club
+        customPreset:
+            privateKeySecurityMode: PROMPT_MAIN_TRANSPORT
+            nodes:
+                -
+                    friendlyName: beacon-002
+                    host: beacon-002.symcom.club
+                    voting: true
+                    harvesting: true
+                    dockerComposeDebugMode: false
+                    brokerDockerComposeDebugMode: false
+        nickName: beacon
+        nodeType: VotingPeer
+        balances:
+            - 3000000
+        addresses:
+            name: node
+            friendlyName: beacon-002
+            roles: Peer,Voting
+            main:
+                publicKey: 0B38A2F0AFCEBB92BD297428902E6D12A9AC40CEA7DF362BD55DF5C4FCF37733
+                address: NBI2RJ5FDQOQL6BI2Y5SHZFXBGITZT4V4X64WUY
+            transport:
+                publicKey: B90CBA58636ADDB4C283BC3C257C7C7495D379BC870632C6B781090D95C8D2A6
+                address: NDYCBJBDKTZPQD363IYK74FTJQWRHRJSAJRJSAY
+            remote:
+                publicKey: 0EFFB990FC5CC2FC5FA9D3A8380255D73D6069906F536FDD3C7AA98B6E787570
+                address: NDU4NRJ5FVOGFN7HYJY23HI5BXG7HX6PFBV7MDI
+            vrf:
+                publicKey: FBC06FCCE1B5367CAF06538144D5A1BEC19960C12543ED4125C0F37799FD6245
+                address: NAUE4JKPKKNF5JHCNO5KVXW5N4CAUKEHGCXEZ3Q
+            voting:
+                -
+                    publicKey: 5294173186917F8036F2183C0B4D0FA675E514BD0704AB513B86C6880B0BD62A
+                    startEpoch: 1
+                    endEpoch: 360
+                    filename: private_key_tree1.dat
+    -
+        number: 3
+        friendlyName: dual-001
+        assembly: dual
+        hostname: dual-001.symcom.club
+        customPreset:
+            privateKeySecurityMode: PROMPT_MAIN_TRANSPORT
+            nodes:
+                -
+                    friendlyName: dual-001
+                    host: dual-001.symcom.club
+                    voting: true
+                    harvesting: true
+                    dockerComposeDebugMode: false
+                    brokerDockerComposeDebugMode: false
+            gateways:
+                -
+                    openPort: true
+            httpsProxies:
+                -
+                    excludeDockerService: false
+        nickName: dual
+        nodeType: VotingDual
+        balances:
+            - 3000000
+        restProtocol: HttpAndHttps
+        addresses:
+            name: node
+            friendlyName: dual-001
+            roles: Peer,Api,Voting
+            main:
+                publicKey: FBB0434535D0307D5099B1740AD36EA801434A1C20EB50DB5310422350F56CC2
+                address: NDONPTS4FNRXYKMZXG5NEOMEZCF7I25VQKAD73Q
+            transport:
+                publicKey: F5FE6390C679FD92314964F1570FC1FAF54F36F3CAB25A3A2DD18201A8333308
+                address: NA5I66U4G6OD33MTA7SP7KL6BYBYMBAOOZMRJSQ
+            remote:
+                publicKey: 8CC4BCB5509D52EED22EEB5A114D1A9FD43E78A2191F5A947FEF811B9D6FC821
+                address: NAQRS2OR6V4S35BIWWG7W34WW2QLHZ5NCUQ5ZZY
+            vrf:
+                publicKey: 1B959B00DF73406495A3063688FC13A6DF310FDE9BC63E50A00390676D2AD5D0
+                address: NC6C2USU6S4SONAPSAXZJRWEMYOCRS452QLWLCA
+            voting:
+                -
+                    publicKey: 03043C90969A054C17407B617C9F3BD115CF549EFBBE3191A3A3C6B20CA4BC4E
+                    startEpoch: 1
+                    endEpoch: 360
+                    filename: private_key_tree1.dat
+    -
+        number: 4
+        friendlyName: dual-002
+        assembly: dual
+        hostname: dual-002.symcom.club
+        customPreset:
+            privateKeySecurityMode: PROMPT_MAIN_TRANSPORT
+            nodes:
+                -
+                    friendlyName: dual-002
+                    host: dual-002.symcom.club
+                    voting: true
+                    harvesting: true
+                    dockerComposeDebugMode: false
+                    brokerDockerComposeDebugMode: false
+            gateways:
+                -
+                    openPort: true
+            httpsProxies:
+                -
+                    excludeDockerService: false
+        nickName: dual
+        nodeType: VotingDual
+        balances:
+            - 3000000
+        restProtocol: HttpAndHttps
+        addresses:
+            name: node
+            friendlyName: dual-002
+            roles: Peer,Api,Voting
+            main:
+                publicKey: 67578C56E4D6818637126C78CAD752B6D82EB5053EF735778F19140CF364AF22
+                address: NCC7FUVAXL7ZGTVQBOFCKALBA6Y3VQRLZBE2YEQ
+            transport:
+                publicKey: 70B613B6F62BC4476DA0E6ECD81F68DD86AF8D5A943B6DFBD9AF050C9D11C0AB
+                address: NCBNJTPXGMWUE3FAVAFMN4DBWDIP754P2Z6CVAA
+            remote:
+                publicKey: 533ECACF07D7A89F05018FC04395DA24D2FEB2877DA8EE4B563995C2451D539E
+                address: NCLPPT6UFC7RSXKZYRGRHNRYSHPL4ECKUN4K6YI
+            vrf:
+                publicKey: 4936B0DF0A685BEFCA259182E30D99922DB25D298476600D2B8BD1EE65C7D3F0
+                address: NCHHPGHVDCU4AX7P3KLQLVKKNE5DWW25RBYVW2Q
+            voting:
+                -
+                    publicKey: 6089A71E2C2F9F71D2CD22C247390CE95D66E1453E41CAB6DD62FF37E72F0D80
+                    startEpoch: 1
+                    endEpoch: 360
+                    filename: private_key_tree1.dat
+    -
+        number: 5
+        friendlyName: dual-003
+        assembly: dual
+        hostname: dual-003.symcom.club
+        customPreset:
+            privateKeySecurityMode: PROMPT_MAIN_TRANSPORT
+            nodes:
+                -
+                    friendlyName: dual-003
+                    host: dual-003.symcom.club
+                    voting: false
+                    harvesting: true
+                    dockerComposeDebugMode: false
+                    brokerDockerComposeDebugMode: false
+            gateways:
+                -
+                    openPort: true
+            httpsProxies:
+                -
+                    excludeDockerService: false
+        nickName: dual
+        nodeType: HarvestingDual
+        balances:
+            - 1000000
+        restProtocol: HttpAndHttps
+        addresses:
+            name: node
+            friendlyName: dual-003
+            roles: Peer,Api
+            main:
+                publicKey: 928416D1C595087F2A75817E0A09E7DE6A6816F388A8DBE9063D8C69D95BAE05
+                address: NAWUCJFJZDDC3WYGGSGUBRTOE3Y2R2BD54OXEXQ
+            transport:
+                publicKey: C421AA134AFFFE1AF2452FCDCBD8A21EF4752CBF0DA831A95BBB6AE3FC1AF866
+                address: NCBILRYKB6T4S5ITPH54YZJBT5QQ7Q7PMQTZBWY
+            remote:
+                publicKey: 7419090DD4A419EBF574376B3A8FC77C0DE345AE26331D14A4118AE7DF3612C9
+                address: NCWUNTJ5S4ZL5X5QFFBAUUYNWF6CJTPQ2SPVUEY
+            vrf:
+                publicKey: D895FF5AEA198625C0DB11E15AD5C01C41A374A030A4A8CFB02E9B82D1E26F99
+                address: NB6PYXBCDHUOPUFHGAT7JSZIPAP7L2ZXBDAKFHY
+    -
+        number: 6
+        friendlyName: services-001
+        assembly: services
+        hostname: services-001.symcom.club
+        customPreset:
+            domain: symcom.club
+        nickName: services
+        nodeType: Services
+        balances: []
+nemesisSeedFolder: nemesis-seed

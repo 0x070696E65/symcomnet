@@ -1,0 +1,10 @@
+privateKeySecurityMode: PROMPT_MAIN_TRANSPORT
+nodes:
+    -
+        friendlyName: beacon-002
+        host: beacon-002.symcom.club
+        voting: true
+        harvesting: true
+        dockerComposeDebugMode: false
+        brokerDockerComposeDebugMode: false
+nemesisSeedFolder: nemesis-seed

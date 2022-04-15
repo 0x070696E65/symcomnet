@@ -1,0 +1,30 @@
+version: 2
+networkType: 104
+nemesisGenerationHashSeed: 27D2ECCCEEC2D70EA4F6885E17B516EB41558CF4D2809834BE7741A095C3D1D6
+nodes:
+    -
+        name: node
+        friendlyName: dual-002
+        roles: Peer,Api,Voting
+        main:
+            publicKey: 67578C56E4D6818637126C78CAD752B6D82EB5053EF735778F19140CF364AF22
+            address: NCC7FUVAXL7ZGTVQBOFCKALBA6Y3VQRLZBE2YEQ
+        transport:
+            publicKey: 70B613B6F62BC4476DA0E6ECD81F68DD86AF8D5A943B6DFBD9AF050C9D11C0AB
+            address: NCBNJTPXGMWUE3FAVAFMN4DBWDIP754P2Z6CVAA
+        remote:
+            privateKey: >-
+                ENCRYPTED:577913ed252fd637d29e5d1a237bca07c736418a1d72cc5eed52163df27509ac4ZwhIjk56BU6HvoveEM1wsrnVA22VXrmp7HqKothz3c1ALHTciBTfJ5hfxAkQAQ+HZgI8JN4Y293XnfQkc/t/gzRS41CN2h5P28gTvIqdYw=
+            publicKey: 533ECACF07D7A89F05018FC04395DA24D2FEB2877DA8EE4B563995C2451D539E
+            address: NCLPPT6UFC7RSXKZYRGRHNRYSHPL4ECKUN4K6YI
+        vrf:
+            privateKey: >-
+                ENCRYPTED:28b4a6e4b0ca839baf7c7067cda9d5d0d3624ba098598e41ed468924f3776582ofB26CYQm6N9z1NRgaRP2DbYqH5eQbnedw74yh+Nv56RwHhfjSTePcZ3wk89rP2+t0NWhxrobicyAUIhA/P6eHcGxy2NpMn2uJVgZj+BDow=
+            publicKey: 4936B0DF0A685BEFCA259182E30D99922DB25D298476600D2B8BD1EE65C7D3F0
+            address: NCHHPGHVDCU4AX7P3KLQLVKKNE5DWW25RBYVW2Q
+        voting:
+            -
+                publicKey: 6089A71E2C2F9F71D2CD22C247390CE95D66E1453E41CAB6DD62FF37E72F0D80
+                startEpoch: 1
+                endEpoch: 360
+                filename: private_key_tree1.dat

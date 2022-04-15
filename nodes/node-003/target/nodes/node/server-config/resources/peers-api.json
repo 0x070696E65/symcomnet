@@ -1,0 +1,27 @@
+{
+  "_info": "this file contains a list of api peers",
+  "knownPeers": [
+    {
+      "publicKey": "67578C56E4D6818637126C78CAD752B6D82EB5053EF735778F19140CF364AF22",
+      "endpoint": {
+        "host": "dual-002.symcom.club",
+        "port": 7900
+      },
+      "metadata": {
+        "name": "dual-002",
+        "roles": "Api,Peer,Voting"
+      }
+    },
+    {
+      "publicKey": "928416D1C595087F2A75817E0A09E7DE6A6816F388A8DBE9063D8C69D95BAE05",
+      "endpoint": {
+        "host": "dual-003.symcom.club",
+        "port": 7900
+      },
+      "metadata": {
+        "name": "dual-003",
+        "roles": "Api,Peer"
+      }
+    }
+  ]
+}

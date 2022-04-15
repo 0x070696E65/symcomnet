@@ -1,0 +1,8 @@
+domain: symcom.club
+faucets:
+    -
+        repeat: 1
+        compose:
+            environment:
+                FAUCET_PRIVATE_KEY: DFE8CF496D245BDDDC78FDCFED3F7238FF819BC5EC990AB1A68E1088615B880C
+nemesisSeedFolder: nemesis-seed

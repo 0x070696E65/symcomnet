@@ -1,0 +1,49 @@
+{
+  "_info": "this file contains a list of peers",
+  "knownPeers": [
+    {
+      "publicKey": "41D65B78352B05A0DB73CD0C4872A4BEE1A7CBD0B26067C078B715D1FF90ABFF",
+      "endpoint": {
+        "host": "beacon-001.symcom.club",
+        "port": 7900
+      },
+      "metadata": {
+        "name": "beacon-001",
+        "roles": "Peer,Voting"
+      }
+    },
+    {
+      "publicKey": "0B38A2F0AFCEBB92BD297428902E6D12A9AC40CEA7DF362BD55DF5C4FCF37733",
+      "endpoint": {
+        "host": "beacon-002.symcom.club",
+        "port": 7900
+      },
+      "metadata": {
+        "name": "beacon-002",
+        "roles": "Peer,Voting"
+      }
+    },
+    {
+      "publicKey": "FBB0434535D0307D5099B1740AD36EA801434A1C20EB50DB5310422350F56CC2",
+      "endpoint": {
+        "host": "dual-001.symcom.club",
+        "port": 7900
+      },
+      "metadata": {
+        "name": "dual-001",
+        "roles": "Api,Peer,Voting"
+      }
+    },
+    {
+      "publicKey": "67578C56E4D6818637126C78CAD752B6D82EB5053EF735778F19140CF364AF22",
+      "endpoint": {
+        "host": "dual-002.symcom.club",
+        "port": 7900
+      },
+      "metadata": {
+        "name": "dual-002",
+        "roles": "Api,Peer,Voting"
+      }
+    }
+  ]
+}

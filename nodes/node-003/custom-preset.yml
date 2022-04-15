@@ -1,0 +1,16 @@
+privateKeySecurityMode: PROMPT_MAIN_TRANSPORT
+nodes:
+    -
+        friendlyName: dual-001
+        host: dual-001.symcom.club
+        voting: true
+        harvesting: true
+        dockerComposeDebugMode: false
+        brokerDockerComposeDebugMode: false
+gateways:
+    -
+        openPort: true
+httpsProxies:
+    -
+        excludeDockerService: false
+nemesisSeedFolder: nemesis-seed

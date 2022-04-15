@@ -1,0 +1,46 @@
+preset: custom-network-preset.yml
+cloneFromPreset: mainnet
+domain: symcom.club
+suffix: myc
+friendlyNamePattern: $nickname-$friendlyNumber
+networkType: 104
+isNewNetwork: true
+faucetBalances:
+    - 392146430
+additionalCurrencyDistributions:
+    - []
+nodeTypes:
+    -
+        nickName: beacon
+        nodeType: VotingPeer
+        balances:
+            - 3000000
+        total: 2
+    -
+        nickName: dual
+        nodeType: VotingDual
+        balances:
+            - 3000000
+        total: 2
+        restProtocol: HttpAndHttps
+    -
+        nickName: dual
+        nodeType: HarvestingDual
+        balances:
+            - 1000000
+        total: 1
+        restProtocol: HttpAndHttps
+    -
+        nickName: services
+        nodeType: Services
+        balances: []
+        total: 1
+customNetworkPreset:
+    nemesis:
+        mosaics:
+            -
+                name: coin
+    networkDescription: SymComNet
+    nemesisGenerationHashSeed: 27D2ECCCEEC2D70EA4F6885E17B516EB41558CF4D2809834BE7741A095C3D1D6
+    epochAdjustment: 1650007749s
+    baseNamespace: symcom

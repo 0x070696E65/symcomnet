@@ -1,0 +1,6 @@
+nemesis-target/databases/
+nemesis-target/nodes/node/logs/
+nemesis-target/nodes/node/data/
+nemesis-target/gateways/rest-gateway/logs/
+nemesis-target/address.yml
+logs.log

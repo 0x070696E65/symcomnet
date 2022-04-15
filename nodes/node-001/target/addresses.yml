@@ -1,0 +1,30 @@
+version: 2
+networkType: 104
+nemesisGenerationHashSeed: 27D2ECCCEEC2D70EA4F6885E17B516EB41558CF4D2809834BE7741A095C3D1D6
+nodes:
+    -
+        name: node
+        friendlyName: beacon-001
+        roles: Peer,Voting
+        main:
+            publicKey: 41D65B78352B05A0DB73CD0C4872A4BEE1A7CBD0B26067C078B715D1FF90ABFF
+            address: NBKMOKQJYA43W4N23VWPFV6PBCB2CEGEDKVY3TY
+        transport:
+            publicKey: 9D328A5C490970EBA7E38D0337DAAE86B45FC226F1F18D61DE86F31FB577E631
+            address: NDJJIGJZY54XOYTIRTKOFVCUPTVZOE7DN2ST5JA
+        remote:
+            privateKey: >-
+                ENCRYPTED:724e5c10bff0d89e226649c9684349cefe16aee304ba8c6351b697082c9bc499bZr4Ao2ZUdWWdQokuYtclZMRpzx1Wsa8maTaRidqyVw1VK7p2Dgb3P93txri0jvkSbScwaeLFP3Rk3X7roM+/nmrevpW1fXUyLhlGrlbsd0=
+            publicKey: DDB243864B5FEADD86318DBC141F10D46B59E2D0ADF6CFC4CAFB2B0D1951DDA7
+            address: NABXJYWIEBFUKWR2OUUDNOL5S6XUOUCQ5RNSEMI
+        vrf:
+            privateKey: >-
+                ENCRYPTED:30ab2823b20411bd928d1fcc53b423ec2a2071c35072057a01b30107f22920e6tEKZF2cm0d8b25Z2zBHP+8XMt85X4K8v+y9P9BYT4J+t7OdTwnD90p8yt0i1USxKpa5Bq5tu1+wST4tNhSPlCOtpL3Bf8A8e/QMFfw5ybuI=
+            publicKey: EB4DFCA63C119F14B3AB190FDF2412483CF05A2F72734BA88DF7C66298972AE1
+            address: NBNUQTSZHISWCSAP2D4LSNEJM5QG5CYKOLDEPCY
+        voting:
+            -
+                publicKey: E4686421B133E8995C329E802646A5D002004101E30798544D5C70E395E4AE30
+                startEpoch: 1
+                endEpoch: 360
+                filename: private_key_tree1.dat

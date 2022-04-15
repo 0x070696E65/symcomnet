@@ -1,0 +1,54 @@
+{
+  "peersApi": {
+    "defaultNode": "https://dual-001.symcom.club:3001",
+    "nodes": [
+      "https://dual-001.symcom.club:3001",
+      "https://dual-002.symcom.club:3001",
+      "https://dual-003.symcom.club:3001"
+    ]
+  },
+  "endpoints": {
+    "marketData": "https://min-api.cryptocompare.com/"
+  },
+  "networkConfig": {
+    "namespaceName": "symcom.coin",
+    "mosaicId": "35AD2A2CF1831AB0",
+    "divisibility": "6",
+    "namespaceId": "B8EE03942D1E4D0B",
+    "networkIdentifier": 104
+  },
+  "footer": {
+    "link": [
+      {
+        "href": "https://nemflash.io/",
+        "text": "NEM News",
+        "icon": "IconNewspaper"
+      },
+      {
+        "href": "https://forum.nem.io/",
+        "text": "Forum",
+        "icon": "IconForum"
+      },
+      {
+        "href": "https://t.me/nemred",
+        "text": "Telegram",
+        "icon": "IconTelegram"
+      },
+      {
+        "href": "https://www.reddit.com/r/nem/",
+        "text": "Reddit",
+        "icon": "IconReddit"
+      },
+      {
+        "href": "https://github.com/nemtech",
+        "text": "Github",
+        "icon": "IconGithub"
+      },
+      {
+        "href": "https://faucet.symcom.club/",
+        "text": "Faucet",
+        "icon": "IconHomeCurrencyUsd"
+      }
+    ]
+  }
+}
